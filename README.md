@@ -5,7 +5,7 @@
 
 A production-grade, drag-and-drop workflow designer built for HR automation pipelines. 
 
-## 🏗 Architecture & Design Decisions
+## Architecture & Design Decisions
 
 - **Framework**: React 18 + Vite for lightning-fast compilation and optimized production builds.
 - **State Management**: `zustand` is used as a global, un-opinionated store. By coupling it directly with `reactflow` change handlers, we completely eliminate prop-drilling while keeping the React tree clean and reactive.
@@ -13,7 +13,7 @@ A production-grade, drag-and-drop workflow designer built for HR automation pipe
 - **API Mocking**: `msw` (Mock Service Worker) intercepts browser requests. This allows frontend development to proceed completely parallel to backend development, providing a highly realistic network testing environment.
 - **Form Architecture**: Fully controlled forms directly tied to the Zustand store, ensuring the `serialize()` hook always generates real-time, accurate JSON representations of the canvas.
 
-## 🚀 How to Run
+## How to Run
 
 1. Make sure you have installed the core dependencies:
    ```bash
@@ -28,7 +28,7 @@ A production-grade, drag-and-drop workflow designer built for HR automation pipe
    npm run dev
    ```
 
-## 🛠 What Can Be Improved
+## What Can Be Improved
 
 1. **Canvas-Integrated Simulation**: Instead of just sidebar logs, nodes will glow and pulse on the canvas as the "execution" passes through them. This makes the simulator feel alive and much easier to debug.
 2. **Auto-Persistence**: Your work will automatically save to your browser's local storage. If you accidentally refresh the page or close the tab, your entire layout and configuration will be exactly where you left it.
