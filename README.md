@@ -27,6 +27,7 @@ A production-grade, drag-and-drop workflow designer built for HR automation pipe
 
 ## 🛠 What Can Be Improved
 
-1. **Undo/Redo Stack**: Implement a history stack within the Zustand store to allow standard `Ctrl+Z` / `Cmd+Z` capabilities.
-2. **Edge Validation**: Currently validation checks for completely disconnected nodes. It can be enhanced to strictly validate edge directions (e.g. End nodes cannot be sources, Start nodes cannot be targets).
-3. **Canvas Minimap & Saving**: Integrate a cloud sync feature allowing users to persist the output of `serialize()` into a database, loading the layout coordinates via `position` object back into ReactFlow.
+1. **Canvas-Integrated Simulation**: Instead of just sidebar logs, nodes will glow and pulse on the canvas as the "execution" passes through them. This makes the simulator feel alive and much easier to debug.
+2. **Auto-Persistence**: Your work will automatically save to your browser's local storage. If you accidentally refresh the page or close the tab, your entire layout and configuration will be exactly where you left it.
+3. **Pro-Level Navigation**: Adding "Spacebar Panning" and "Select All" (Ctrl+A) shortcuts, which are standard in high-end design tools like Figma or Miro.
+4. **Bulk Deletion**: The ability to select multiple nodes and delete them all at once.
