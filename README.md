@@ -1,4 +1,7 @@
+
 # Enterprise HR Workflow Designer
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-22 214930" src="https://github.com/user-attachments/assets/adfc56b5-b41a-4e52-9b4c-8b0c97b91fd5" />
 
 A production-grade, drag-and-drop workflow designer built for HR automation pipelines. 
 
